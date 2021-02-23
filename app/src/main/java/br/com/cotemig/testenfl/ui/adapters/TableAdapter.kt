@@ -67,6 +67,7 @@ class TableAdapter (var context: Context, var table: List<Standings>) :
 
     }
 
+
     class HeaderHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
 
         fun bind(standings: Standings){
