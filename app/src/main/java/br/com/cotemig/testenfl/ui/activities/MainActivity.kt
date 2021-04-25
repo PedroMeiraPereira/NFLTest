@@ -1,5 +1,6 @@
 package br.com.cotemig.testenfl.ui.activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -18,6 +19,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         getStanding()
+
+        titletest.setOnClickListener{
+            var intent = Intent(this, TeamsActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 
     fun getStanding(){

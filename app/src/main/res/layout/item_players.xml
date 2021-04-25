@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/time">
+    android:layout_height="wrap_content">
 
     <ImageView
-        android:id="@+id/strTeamBadge"
+        android:id="@+id/photoUrl"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_margin="10dp" />
@@ -15,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:orientation="vertical"
-        android:layout_toRightOf="@+id/strTeamBadge">
+        android:layout_toRightOf="@+id/photoUrl">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -26,13 +25,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
-                android:text="Nome do Time: "/>
+                android:text="Nome do Jogador: "/>
             <TextView
-                android:id="@+id/strTeam"
+                android:id="@+id/name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
-                android:text="Arizona Cardinals"/>
+                android:text="Kyle Fuller"/>
 
         </LinearLayout>
 
@@ -46,14 +45,14 @@
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
                 android:layout_marginTop="5dp"
-                android:text="Técnico Principal: "/>
+                android:text="Posição: "/>
             <TextView
-                android:id="@+id/strManager"
+                android:id="@+id/position"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
                 android:layout_marginTop="5dp"
-                android:text="Kliff Kingsbury"/>
+                android:text="CB"/>
 
         </LinearLayout>
 
@@ -67,14 +66,14 @@
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
                 android:layout_marginTop="5dp"
-                android:text="Estádio: "/>
+                android:text="Faculdade: "/>
             <TextView
-                android:id="@+id/strStadium"
+                android:id="@+id/college"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
                 android:layout_marginTop="5dp"
-                android:text="State Farm Stadium"/>
+                android:text="Virginia Tech"/>
 
         </LinearLayout>
 
@@ -88,14 +87,14 @@
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
                 android:layout_marginTop="5dp"
-                android:text="Endereço do Estádio: "/>
+                android:text="Altura: "/>
             <TextView
-                android:id="@+id/strStadiumLocation"
+                android:id="@+id/heightP"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
                 android:layout_marginTop="5dp"
-                android:text="Glendale, Arizona"/>
+                android:text="5'11''"/>
 
         </LinearLayout>
 
@@ -109,14 +108,14 @@
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
                 android:layout_marginTop="5dp"
-                android:text="Capacidade do Estádio: "/>
+                android:text="Peso: "/>
             <TextView
-                android:id="@+id/intStadiumCapacity"
+                android:id="@+id/weightP"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
                 android:layout_marginTop="5dp"
-                android:text="63400"/>
+                android:text="194"/>
 
         </LinearLayout>
 
