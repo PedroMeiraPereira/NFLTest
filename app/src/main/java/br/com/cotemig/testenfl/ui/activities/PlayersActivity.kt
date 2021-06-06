@@ -6,6 +6,7 @@ import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import br.com.cotemig.testenfl.R
 import br.com.cotemig.testenfl.models.Players
+import br.com.cotemig.testenfl.models.Teams
 import br.com.cotemig.testenfl.services.RetrofitInitializer
 import br.com.cotemig.testenfl.ui.adapters.PlayersAdapter
 import kotlinx.android.synthetic.main.activity_main.*
@@ -24,9 +25,11 @@ class PlayersActivity : AppCompatActivity() {
 
     fun getPlayer(){
 
+        var team = intent.getSerializableExtra("team") as Teams
+
         var s = RetrofitInitializer().serviceListaPlayers()
 
-        var call = s.getPlayer()
+        var call = s.getPlayer(team.strTeamShort)
 
         call.enqueue(object : retrofit2.Callback<List<Players>>{
 
